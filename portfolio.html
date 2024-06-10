@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="portfolio.css">
+    <title>Porfolio</title>
+</head>
+<body>
+ <header>
+        <h1>My Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am a designer and art director currently living in Kenya.I like to bring the best of both worlds into my design which is known for its simplicity and sophisticated thoughtful details.My intention is to capture a brand personality by designing comprehensive and compelling brand identities and designs</p>
+    </section>
+
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="portfolio-item">
+            <img src="images/lupin.jpg" alt="My Picture" id="image1">
+        </div>
+
+<div class="container d-flex">
+            <div>
+             <h3>Project 1</h3>
+            <p>Graphic Design</p>
+            <img src="images/projo2.webp" alt="" id="image2">
+        </div>
+        <div>
+            <h3>Project 2</h3>
+            <p>Web Development</p>
+            <img src="images/projo1.webp" alt="" id="image3">
+        </div>
+</div>
+        <!-- Add more portfolio items here -->
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form action="submit.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+
+
+</body>
+</html>
